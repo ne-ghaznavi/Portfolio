@@ -5,6 +5,13 @@
     src: url('../fonts/IRANSansWeb(FaNum).woff2');
 }
 
+@font-face {
+    font-family: DancingScript;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
 html,
 body,
 body div,

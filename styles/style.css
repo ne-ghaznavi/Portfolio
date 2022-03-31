@@ -43,6 +43,7 @@
     left: 0;
     right: 0;
     z-index: 5;
+    background-color: #fff;
 }
 
 .navbar__container {
@@ -128,8 +129,99 @@
 .navbar__logo {
     display: inline-block;
     font-weight: 600;
+    font-family: DancingScript;
     font-size: 1.3rem;
     color: #090a0c;
+}
+
+.navbar__logo:hover {
+    color: #d9832e;
+}
+
+.navbar__logo span {
+    font-weight: 600;
+    font-family: DancingScript;
+    font-size: 1.3rem;
+    color: #d9832e;
+}
+
+.home__container {
+    position: relative;
+    padding: 100px 15px;
+}
+
+.home__content,
+.home__btn {
+    padding: 20px;
+}
+
+.home__content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    line-height: 1;
+}
+
+.home__content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.home__content p {
+    text-align: justify;
+}
+
+.home__btn a {
+    display: inline-block;
+    border: 2px solid #d9832e;
+    color: #d9832e;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+}
+
+.home__btn a:first-of-type {
+    background: #d9832e;
+    color: #ffffff;
+}
+
+.home__container .go-to-next {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    width: 35px;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+}
+
+.home__container .go-to-next a {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    display: inline-block;
+    background: #d9832e;
+    border-radius: 50%;
+    animation: down 1s linear infinite;
+}
+
+.home__container .go-to-next a span {
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(135deg);
 }
 
 /* keyframes start */
@@ -140,6 +232,32 @@
     100% {
         transform: rotate(360deg);
     }
+}
+@-webkit-keyframes down {
+    0% {
+      top: 5px;
+      opacity: 0; }
+    30% {
+      top: 15px;
+      opacity: 1; }
+    60% {
+      top: 15px;
+      opacity: 0.60; }
+    100% {
+      top: 25px;
+      opacity: 0; }
+}
+
+@keyframes down {
+    0% {
+      top: 5px;
+      opacity: 0; }
+    30% {
+      top: 15px;
+      opacity: 1; }
+    100% {
+      top: 25px;
+      opacity: 0; }
 }
 
 /* media query start */
