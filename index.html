@@ -11,10 +11,22 @@
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
 <body>
+    <div id="loading">
+        <div class="load-circle">
+            <span class="one"></span>
+        </div>
+    </div>
+
     <!-- jquery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
-
     <!-- custom scripts -->
     <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            setTimeout( function(){ 
+                $('#loading').css('display', 'none');
+            },2000);
+        });
+    </script>
 </body>
 </html>
