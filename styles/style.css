@@ -37,6 +37,102 @@
     animation: lds-dual-ring 1.2s linear infinite;
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.navbar__container {
+    position: relative;
+    max-width: 1140px;
+    width: 100%;
+    padding: .5rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 15px;
+    background: #d9832e;
+    border: none;
+}
+
+.navbar__btn span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    margin: auto;
+    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+    background: #ffffff;
+    color: #ffffff;
+}
+
+.navbar__list {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    top: 60px;
+    right: 16px;
+    left: 16px;
+    background: #ffffff;
+    visibility: hidden;
+    border: 1px solid #ddd;
+    transition: height .3s ease;
+}
+
+.navbar__list.show {
+    height: 211px;
+    visibility: visible;
+    transition: height .3s ease;
+}
+
+.navbar__item {
+    padding: 8px 16px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.navbar__link.active {
+    color: #d9832e;
+}
+
+.navbar__link:hover{
+    color: #d9832e;
+}
+
+.navbar__item:last-of-type {
+    border-bottom: unset;
+}
+
+.navbar__link {
+    display: inline-block;
+    width: 100%;
+    color: #000;
+}
+
+
+.navbar__logo {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #090a0c;
+}
+
+/* keyframes start */
 @keyframes lds-dual-ring {
     0% {
         transform: rotate(0deg);
@@ -46,3 +142,21 @@
     }
 }
 
+/* media query start */
+@media (min-width: 992px) {
+    .navbar__btn {
+        display: none;
+    }
+
+    .navbar__list {
+        all: unset;
+        list-style-type: none;
+        display: flex;
+    }
+
+    .navbar__item {
+        border-bottom: unset;
+    }
+}
+
+/* media query end */

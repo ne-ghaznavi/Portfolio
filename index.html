@@ -16,6 +16,23 @@
             <span class="one"></span>
         </div>
     </div>
+    <header id="header">
+        <nav class="navbar__container">
+            <button class="navbar__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#" class="navbar__link active">خانه</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">درباره من</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">پروژه‌ها</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">وبلاگ</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">تماس با من</a></li>
+            </ul>
+            <a class="navbar__logo">Developer01</a>
+        </nav>
+    </header>
 
     <!-- jquery -->
     <script src="./js/jquery-3.6.0.min.js"></script>
@@ -23,9 +40,22 @@
     <script src="./js/main.js"></script>
     <script>
         $(document).ready(function() {
+
+            // loading page hide
             setTimeout( function(){ 
                 $('#loading').css('display', 'none');
             },2000);
+
+            // show mobile menu
+            $('.navbar__btn').click(function() {
+                $('.navbar__list').toggleClass('show');
+            });
+
+            $('.navbar__link').click(function() {
+                $('.navbar__link').removeClass('active');
+                $(this).addClass('active');
+            });
+
         });
     </script>
 </body>
