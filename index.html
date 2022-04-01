@@ -94,11 +94,73 @@
                 </div>
                 <div class="projects__list">
                     <div class="projects__item">
+                        <img src="./images/about-us.jpg" title="" alt="">
+                        <div class="projects__info">
+                            <a href="#" title="github"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-site"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./images/about-us.jpg" title="" alt="">
+                        <div class="projects__info">
+                            <a href="#" title="github"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-site"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./images/about-us.jpg" title="" alt="">
+                        <div class="projects__info">
+                            <a href="#" title="github"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-site"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./images/about-us.jpg" title="" alt="">
+                        <div class="projects__info">
+                            <a href="#" title="github"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-site"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./images/about-us.jpg" title="" alt="">
+                        <div class="projects__info">
+                            <a href="#" title="github"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-site"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="./images/about-us.jpg" title="" alt="">
+                        <div class="projects__info">
+                            <a href="#" title="github"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-site"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end project section -->
+        
+        <!-- start blog section -->
+        <section id="blog">
+            <div class="blog__container">
+                <div class="blog__title">
+                    <h3>وبلاگ</h3>
+                </div>
+                <div class="blog__list">
+                    <div class="blog__post">
+                        <div class="blog__post-img">
+                            <img src="./images/about-us.jpg" title="" alt="">
+                        </div>
+                        <div class="blog__post-info">
+                            <h5>عنوان پست</h5>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و س</p>
+                            <a class="m-btn-link" href="#">مطالعه بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end blog section -->
     </main>
 
     <!-- jquery -->
@@ -120,6 +182,13 @@
             // active navbar link
             $('.navbar__link').click(function() {
                 $('.navbar__link').removeClass('active');
+                $(this).addClass('active');
+            });
+            
+            $('.projects__item').click(function() {
+                $('.projects__item').children('.projects__info').removeClass('active');
+                $('.projects__item').removeClass('active');
+                $(this).children('.projects__info').addClass('active');
                 $(this).addClass('active');
             });
         });
