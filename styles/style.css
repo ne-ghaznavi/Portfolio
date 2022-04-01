@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #loading {
     position: fixed;
     top: 0;
@@ -453,6 +457,8 @@
     color: #090a0c;
     margin-bottom: .5rem;
     text-align: justify;
+    height: 70px;
+    overflow: hidden;
 }
 
 .blog__post-info a {
