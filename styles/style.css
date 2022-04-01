@@ -564,6 +564,18 @@
     .projects__list {
         grid-template-columns: auto auto  auto;
     }
+
+    .blog__list {
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 25px;
+        justify-content: space-between;
+    }
+
+    .blog__post {
+        max-width: unset;
+    }
 }
 
 /* media query end */
