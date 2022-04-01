@@ -463,6 +463,38 @@
     border-bottom: 2px solid currentColor;
 }
 
+#footer {
+    padding: 15px 0;
+    background-color: #111;
+}
+
+.footer__container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer__social-icon,
+.footer__copyright {
+    padding: 10px 0;
+    direction: ltr;
+}
+
+.footer__social-icon a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    margin-right: 17px;
+}
+
+.footer__copyright p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    margin: 0;
+
+}
+
+
 /* keyframes start */
 @keyframes lds-dual-ring {
     0% {
@@ -575,6 +607,13 @@
 
     .blog__post {
         max-width: unset;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0 auto;
     }
 }
 
